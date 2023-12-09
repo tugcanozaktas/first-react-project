@@ -9,5 +9,4 @@ root.render(
   <React.StrictMode>
     <App location={forecast.location} />
   </React.StrictMode>,
-  document.getElementById("root"),
 );
