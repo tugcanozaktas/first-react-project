@@ -3,6 +3,7 @@ import { render } from "@testing-library/react";
 import ForecastSummaries from "../components/ForecastSummaries";
 
 describe("ForecastSummaries", () => {
+  const onSelect = () => {};
   const validProps = [
     {
       date: 1525046400000,
@@ -12,7 +13,6 @@ describe("ForecastSummaries", () => {
         max: 22,
         min: 12,
       },
-      onSelect: () => {},
     },
     {
       date: 1525132800000,
@@ -22,17 +22,18 @@ describe("ForecastSummaries", () => {
         max: 24,
         min: 13,
       },
-      onSelect: () => {},
     },
   ];
 
   it("Renders correctly", () => {
-    const { asFragment } = render(<ForecastSummaries forecasts={validProps} />);
+    const { asFragment } = render(
+      <ForecastSummaries forecasts={validProps} onForecastSelect={onSelect} />,
+    );
     expect(asFragment).toMatchSnapshot();
   });
   it("renders correct amount of forecastSummary", () => {
     const { getAllByTestId } = render(
-      <ForecastSummaries forecasts={validProps} />,
+      <ForecastSummaries forecasts={validProps} onForecastSelect={onSelect} />,
     );
     expect(getAllByTestId("forecast-summary")).toHaveLength(2);
   });
