@@ -1,8 +1,7 @@
-/* eslint-disable react/prop-types */
 import React from "react";
+import PropTypes from "prop-types";
 import ForecastSummary from "./ForecastSummary";
 
-// eslint-disable-next-line react/prop-types
 function ForecastSummaries({ forecasts, onForecastSelect }) {
   return (
     <div className="forecast-summaries">
@@ -21,3 +20,19 @@ function ForecastSummaries({ forecasts, onForecastSelect }) {
 }
 
 export default ForecastSummaries;
+
+ForecastSummaries.propTypes = {
+  forecasts: PropTypes.arrayOf(
+    PropTypes.shape({
+      key: PropTypes.number,
+      date: PropTypes.number,
+      description: PropTypes.string,
+      icon: PropTypes.string,
+      temperature: PropTypes.shape({
+        max: PropTypes.number,
+        min: PropTypes.number,
+      }).isRequired,
+    }).isRequired,
+  ).isRequired,
+  onForecastSelect: PropTypes.func.isRequired,
+};

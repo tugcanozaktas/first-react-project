@@ -27,6 +27,8 @@ function ForecastSummary(props) {
   );
 }
 
+export default ForecastSummary;
+
 ForecastSummary.propTypes = {
   date: PropTypes.number.isRequired,
   temperature: PropTypes.shape({
@@ -37,5 +39,3 @@ ForecastSummary.propTypes = {
   icon: PropTypes.string.isRequired,
   onSelect: PropTypes.func.isRequired,
 };
-
-export default ForecastSummary;
