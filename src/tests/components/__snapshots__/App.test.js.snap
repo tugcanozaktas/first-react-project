@@ -1,0 +1,180 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App renders correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="forecast-summaries"
+  >
+    <div
+      class="forecast-sumamry"
+      data-testid="forecast-summary"
+    >
+      <div
+        class="forecast-summary__date"
+      >
+        Wed 13th Dec
+      </div>
+      <div
+        class="forecast-summary__icon"
+      >
+        <i
+          class="wi wi-day-cloudy"
+          data-testid="forecast-icon"
+          name="owm"
+        />
+      </div>
+      <div
+        class="forecast-summary__temperature"
+      >
+        5°C
+      </div>
+      <div
+        class="forecast-summary__description"
+      >
+        Clouds
+      </div>
+      <button
+        type="button"
+      >
+        More details
+      </button>
+    </div>
+    <div
+      class="forecast-sumamry"
+      data-testid="forecast-summary"
+    >
+      <div
+        class="forecast-summary__date"
+      >
+        Thu 14th Dec
+      </div>
+      <div
+        class="forecast-summary__icon"
+      >
+        <i
+          class="wi wi-day-cloudy"
+          data-testid="forecast-icon"
+          name="owm"
+        />
+      </div>
+      <div
+        class="forecast-summary__temperature"
+      >
+        4°C
+      </div>
+      <div
+        class="forecast-summary__description"
+      >
+        Clouds
+      </div>
+      <button
+        type="button"
+      >
+        More details
+      </button>
+    </div>
+    <div
+      class="forecast-sumamry"
+      data-testid="forecast-summary"
+    >
+      <div
+        class="forecast-summary__date"
+      >
+        Fri 15th Dec
+      </div>
+      <div
+        class="forecast-summary__icon"
+      >
+        <i
+          class="wi wi-day-cloudy"
+          data-testid="forecast-icon"
+          name="owm"
+        />
+      </div>
+      <div
+        class="forecast-summary__temperature"
+      >
+        7°C
+      </div>
+      <div
+        class="forecast-summary__description"
+      >
+        Clouds
+      </div>
+      <button
+        type="button"
+      >
+        More details
+      </button>
+    </div>
+    <div
+      class="forecast-sumamry"
+      data-testid="forecast-summary"
+    >
+      <div
+        class="forecast-summary__date"
+      >
+        Sat 16th Dec
+      </div>
+      <div
+        class="forecast-summary__icon"
+      >
+        <i
+          class="wi wi-day-cloudy"
+          data-testid="forecast-icon"
+          name="owm"
+        />
+      </div>
+      <div
+        class="forecast-summary__temperature"
+      >
+        8°C
+      </div>
+      <div
+        class="forecast-summary__description"
+      >
+        Clouds
+      </div>
+      <button
+        type="button"
+      >
+        More details
+      </button>
+    </div>
+    <div
+      class="forecast-sumamry"
+      data-testid="forecast-summary"
+    >
+      <div
+        class="forecast-summary__date"
+      >
+        Sun 17th Dec
+      </div>
+      <div
+        class="forecast-summary__icon"
+      >
+        <i
+          class="wi wi-day-cloudy"
+          data-testid="forecast-icon"
+          name="owm"
+        />
+      </div>
+      <div
+        class="forecast-summary__temperature"
+      >
+        11°C
+      </div>
+      <div
+        class="forecast-summary__description"
+      >
+        Clouds
+      </div>
+      <button
+        type="button"
+      >
+        More details
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;
