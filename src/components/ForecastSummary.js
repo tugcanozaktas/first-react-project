@@ -7,7 +7,9 @@ import WeatherIcon from "react-icons-weather";
 import moment from "moment";
 
 function ForecastSummary(props) {
-  const { date, temperature, description, icon, onSelect } = props;
+  const { date, temperature, description, onSelect } = props;
+  // eslint-disable-next-line react/destructuring-assignment
+  const icon = String(props.icon);
   return (
     <div className="forecast-sumamry" data-testid="forecast-summary">
       <div className="forecast-summary__date">
@@ -36,6 +38,6 @@ ForecastSummary.propTypes = {
     min: PropTypes.number,
   }).isRequired,
   description: PropTypes.string.isRequired,
-  icon: PropTypes.string.isRequired,
   onSelect: PropTypes.func.isRequired,
+  icon: PropTypes.number.isRequired,
 };

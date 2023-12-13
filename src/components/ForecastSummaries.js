@@ -27,7 +27,7 @@ ForecastSummaries.propTypes = {
       key: PropTypes.number,
       date: PropTypes.number,
       description: PropTypes.string,
-      icon: PropTypes.string,
+      icon: PropTypes.number,
       temperature: PropTypes.shape({
         max: PropTypes.number,
         min: PropTypes.number,
