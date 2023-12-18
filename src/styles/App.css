@@ -1,3 +1,41 @@
 .weather-app {
-    margin: 0 20px;
+    padding: 20px;
+    height: 100%;
+    background-image: url("../../photos/pexels-matheus-potsclam-barro-1828305.jpg");
+    background-size:cover;
+    
+}
+.location-details {
+    display: flex;
+    justify-content: center;
+    color: #c9d3e9;
+}
+.search-form {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+}
+
+.search-form input{
+    font-size: 15px;
+    height: 20px;
+    border-radius: 5px;
+    border: solid 0px black;
+}
+
+.search-form input:focus{
+    outline-width: 0;
+}
+
+.search-form button{
+    background-color: #c4d4f8;
+    width: 150px;
+    border: solid 0px black;
+    border-radius: 10px;
+    height: 25px;
+    outline: none;
 }

@@ -5,6 +5,7 @@ import "../styles/ForecastSummaries.css";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import WeatherIcon from "react-icons-weather";
 import moment from "moment";
+import "../styles/ForecastSummary.css";
 
 function ForecastSummary(props) {
   const { date, temperature, description, onSelect } = props;
@@ -22,7 +23,11 @@ function ForecastSummary(props) {
         {temperature.max}&deg;C
       </div>
       <div className="forecast-summary__description">{description}</div>
-      <button type="button" onClick={() => onSelect(date)}>
+      <button
+        className="details-button"
+        type="button"
+        onClick={() => onSelect(date)}
+      >
         More details
       </button>
     </div>

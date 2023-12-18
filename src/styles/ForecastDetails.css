@@ -1,0 +1,22 @@
+.forecast-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    border-radius: 10px;
+
+    background-color: #7388b9ad;
+    color: #222c41;
+}
+
+.forecast-details div{
+    text-align: left;
+    display: inline-block;
+    width: 200px;
+}
+#date{
+    font-size: 20px;
+    text-decoration: underline;
+    text-align: center;
+    font-weight: bold;
+}

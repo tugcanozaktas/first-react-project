@@ -8,7 +8,7 @@ function ForecastDetails({ forecast }) {
   const { date, temperature, humidity, wind } = forecast;
   return (
     <div className="forecast-details">
-      <div>{moment(date).format("ddd Do MMM")}</div>
+      <div id="date">{moment(date).format("ddd Do MMM")}</div>
       <div>Max Temperature: {temperature.max}&deg;C</div>
       <div>Max Temperature: {temperature.min}&deg;C</div>
       <div>Humidity: {humidity}%</div>

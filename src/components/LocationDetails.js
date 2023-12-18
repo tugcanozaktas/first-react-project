@@ -1,6 +1,6 @@
 import React from "react";
-// eslint-disable-next-line import/no-extraneous-dependencies
 import PropTypes from "prop-types";
+import "../styles/ForecastDetails.css";
 
 function LocationDetails(props) {
   const { city, country, errorMessage } = props;
